@@ -25,7 +25,7 @@ Provides continuous two-sided liquidity, dynamic spread control, and full extern
 
 ---
 
-# **Architecture Overview**
+## **Architecture Overview**
 
 ```
                 ┌──────────────────────────┐
@@ -63,7 +63,7 @@ Provides continuous two-sided liquidity, dynamic spread control, and full extern
 
 ---
 
-# **Repo Structure**
+## **Repo Structure**
 
 ```
 poly-maker/
@@ -83,7 +83,7 @@ poly-maker/
 
 ---
 
-# **Requirements**
+## **Requirements**
 
 * Python **3.9.10+**
 * Node.js
@@ -92,12 +92,12 @@ poly-maker/
 * UV package manager
 
 ---
-# **Installation**
+## **Installation**
 
 
 ---
 
-# **Environment Variables**
+## **Environment Variables**
 
 | Variable          | Description                                          |
 | ----------------- | ---------------------------------------------------- |
@@ -109,7 +109,7 @@ poly-maker/
 
 ---
 
-# **Google Sheets Setup**
+## **Google Sheets Setup**
 
 Sheets used:
 
@@ -127,7 +127,7 @@ Steps:
 
 ---
 
-# **Commands Overview**
+## **Commands Overview**
 
 | File                | Purpose                         |
 | ------------------- | ------------------------------- |
@@ -137,7 +137,7 @@ Steps:
 
 ---
 
-# **Advanced Module: Poly Merger**
+## **Advanced Module: Poly Merger**
 
 Automatic position consolidation to reduce gas usage and simplify accounting.
 Powered by Node.js, integrated seamlessly into the main engine.
@@ -151,7 +151,7 @@ poly_merger/
 
 ---
 
-# **Deployment Notes**
+## **Deployment Notes**
 
 * `data_updater` should run continuously (separate IP recommended)
 * Test with minimal balances before scaling
@@ -160,7 +160,7 @@ poly_merger/
 
 ---
 
-# **Troubleshooting**
+## **Troubleshooting**
 
 ### **No orders appear**
 
@@ -180,7 +180,7 @@ poly_merger/
 
 ---
 
-# **License**
+## **License**
 
 MIT
 
