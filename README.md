@@ -28,37 +28,29 @@ Provides continuous two-sided liquidity, dynamic spread control, and full extern
 ## **Architecture Overview**
 
 ```
-                ┌──────────────────────────┐
-                │      Google Sheets       │
-                │  (Hyperparameters, MKTs) │
-                └──────────────┬───────────┘
-                               │
-                               ▼
-                     Configuration Loader
-                               │
-                               ▼
-┌───────────────────────────────────────────────────────────┐
-│                        Poly-Maker Engine                  │
-│                                                           │
-│   ┌─────────────┐     ┌───────────────────┐               │
-│   │ WebSocket    │     │ Market Maker Core │<───┐         │
-│   │ Order Feed   │────▶│ (Spreads, Sizes) │    │         │
-│   └─────────────┘     └───────────────────┘    │         │
-│                                                 │         │
-│   ┌────────────┐      ┌──────────────────────┐ │         │
-│   │ Order Sync  │◀────▶│ Position Manager     │ │         │
-│   │ (REST API)  │      │ (Risk, Balances)     │ │         │
-│   └────────────┘      └──────────────────────┘ │         │
-│                                                 │         │
-│                         ┌────────────────────┐  │         │
-│                         │ Poly Merger (Node) │──┘         │
-│                         └────────────────────┘            │
-└───────────────────────────────────────────────────────────┘
-
-                 Background Services
-                 ──────────────────────────────────────────
-                 update_markets.py  → market DB
-                 update_stats.py    → performance stats
+                     Google Sheets
+        ┌─────────────────────────────────────┐
+        │ Selected Markets • Hyperparameters  │
+        └──────────────┬──────────────────────┘
+                       │
+                       ▼
+              Configuration Layer
+                       │
+                       ▼
+   ┌───────────────────────────────────────────────────────┐
+   │                      Poly-Maker                       │
+   │                                                       │
+   │  WebSocket Stream  →  Orderbook Processor             │
+   │                                                       │
+   │  Risk & Exposure    →  Market Maker Engine            │
+   │                                                       │
+   │  REST Execution     →  Order Synchronization          │
+   │                                                       │
+   │  Node.js Merger     →  Position Consolidation         │
+   └───────────────────────────────────────────────────────┘
+                       │
+                       ▼
+                 Local Data Store
 ```
 
 ---
