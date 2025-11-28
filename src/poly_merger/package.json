@@ -1,0 +1,10 @@
+{
+  "name": "poly_merger",
+  "version": "0.0.1",
+  "description": "Position consolidation stub for Poly-Maker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {}
+}

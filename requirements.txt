@@ -1,0 +1,5 @@
+python-dotenv>=0.21.0
+aiohttp>=3.8.0
+websockets>=10.0
+gspread>=5.7.0
+oauth2client>=4.1.3
