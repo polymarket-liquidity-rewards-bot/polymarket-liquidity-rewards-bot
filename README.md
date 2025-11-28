@@ -79,8 +79,7 @@ poly-maker/
 
 * Python **3.9.10+**
 * Node.js
-* Google Service Account credentials
-* Polymarket account with at least one UI trade
+* Polymarket account
 * UV package manager
 
 ---
@@ -109,13 +108,7 @@ Sheets used:
 * **All Markets** — full market list
 * **Hyperparameters** — spreads, liquidity, sizing
 
-Steps:
-
-1. Create Google Service Account
-2. Download credentials JSON to repo root
-3. Copy the sample sheet
-4. Grant edit access to service account
-5. Set `SPREADSHEET_URL` in `.env`
+> Set `SPREADSHEET_URL` in `.env`
 
 ---
 
@@ -176,3 +169,4 @@ poly_merger/
 
 MIT
 
+---
