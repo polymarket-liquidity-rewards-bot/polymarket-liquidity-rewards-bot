@@ -8,7 +8,7 @@
 ![Automation](https://img.shields.io/badge/Type-Market%20Maker-orange.svg)
 
 Automated market-making system for **Polymarket** prediction markets.
-Provides continuous two-sided liquidity, dynamic spread control, and full external configuration through Google Sheets.
+Provides continuous two-sided liquidity, dynamic spread control, copytrading, and full external configuration through Google Sheets.
 
 ---
 
@@ -22,6 +22,10 @@ Provides continuous two-sided liquidity, dynamic spread control, and full extern
 * Automatic merging of fragmented positions
 * Background market database updater
 * Modular architecture for strategy extensions
+
+### CopyTrading module
+
+- **Ultra-Fast Copytrading (<50ms)** — Automatically mirrors selected traders with sub-50 ms latency. Servers are colocated near Polymarket infrastructure, giving you a speed advantage over most market participants.
 
 ---
 
