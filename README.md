@@ -10,6 +10,8 @@
 Automated market-making system for **Polymarket** prediction markets.
 Provides continuous two-sided liquidity, dynamic spread control, copytrading, and full external configuration through Google Sheets.
 
+![Polymarket liquidity rewards bot](assets/image.png)
+
 ---
 
 ## **Features**
